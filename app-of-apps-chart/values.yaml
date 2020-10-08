@@ -10,12 +10,12 @@ clusters:
       enabled: true
       branch: HEAD
 
-#- name: gke
-#  destinationServer: #INSERT MASTERIP HERE
-#  apps:
-#    prometheus:
-#      enabled: true
-#      version: "9.7.4"
-#    sampleApp:
-#      enabled: true
-#      branch: HEAD
+- name: gke
+ destinationServer: https://BBD84A39501A786D02A60C3C50E2E20D.yl4.us-west-1.eks.amazonaws.com
+ apps:
+   prometheus:
+     enabled: true
+     version: "9.7.4"
+   sampleApp:
+     enabled: true
+     branch: HEAD
