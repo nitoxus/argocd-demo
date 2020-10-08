@@ -1,5 +1,5 @@
 clusters:
-- name: minikube
+- name: gke
   destinationServer: https://kubernetes.default.svc
   apps:
     prometheus:
@@ -10,7 +10,7 @@ clusters:
       enabled: true
       branch: HEAD
 
-- name: gke
+- name: eks
   destinationServer: https://BBD84A39501A786D02A60C3C50E2E20D.yl4.us-west-1.eks.amazonaws.com
   apps:
     prometheus:
